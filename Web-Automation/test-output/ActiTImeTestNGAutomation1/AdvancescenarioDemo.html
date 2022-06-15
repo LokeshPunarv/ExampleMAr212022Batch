@@ -1,0 +1,429 @@
+<html>
+<head>
+<title>TestNG:  AdvancescenarioDemo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AdvancescenarioDemo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>70/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 14 14:47:08 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>318 seconds (318385 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser11()'><b>logoutasuser11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.createuser2()'><b>createuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.modifypwduser3()'><b>modifypwduser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasadmin1()'><b>loginasadmin1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.Deleteuser1()'><b>Deleteuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.createuser1()'><b>createuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>14</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasuser11()'><b>loginasuser11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginwithmodifypwduser11()'><b>loginwithmodifypwduser11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.modifypwduser1()'><b>modifypwduser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.Deleteuser2()'><b>Deleteuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.createuser1()'><b>createuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginwithmodifypwduser2()'><b>loginwithmodifypwduser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasadmin1()'><b>loginasadmin1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser22()'><b>logoutasuser22</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.Deleteuser2()'><b>Deleteuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logout1()'><b>logout1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginwithmodifypwduser3()'><b>loginwithmodifypwduser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.modifypwduser1()'><b>modifypwduser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.createuser2()'><b>createuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasadmin11()'><b>loginasadmin11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginwithmodifypwduser3()'><b>loginwithmodifypwduser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser2()'><b>logoutasuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.createuser3()'><b>createuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasadmin()'><b>loginasadmin</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasadmin2()'><b>logoutasadmin2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser1()'><b>logoutasuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.createuser3()'><b>createuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasuser3()'><b>loginasuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser111()'><b>logoutasuser111</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser22()'><b>logoutasuser22</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.Deleteuser3()'><b>Deleteuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser222()'><b>logoutasuser222</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser3()'><b>logoutasuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.modifypwduser3()'><b>modifypwduser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser33()'><b>logoutasuser33</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasuser22()'><b>loginasuser22</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasuser1()'><b>loginasuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasuser2()'><b>loginasuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>22</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logout1()'><b>logout1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.modifypwduser2()'><b>modifypwduser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser3()'><b>logoutasuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.launchbrowser()'><b>launchbrowser</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasadmin22()'><b>loginasadmin22</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.Deleteuser3()'><b>Deleteuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginwithmodifypwduser1()'><b>loginwithmodifypwduser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.launchbrowser()'><b>launchbrowser</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser2()'><b>logoutasuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser33()'><b>logoutasuser33</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginwithmodifypwduser1()'><b>loginwithmodifypwduser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasadmin11()'><b>loginasadmin11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser1()'><b>logoutasuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logout2()'><b>logout2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasadmin2()'><b>logoutasadmin2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginasuser3()'><b>loginasuser3</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasadmin33()'><b>logoutasadmin33</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginwithmodifypwduser2()'><b>loginwithmodifypwduser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.logoutasuser11()'><b>logoutasuser11</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasuser2()'><b>loginasuser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.loginasuser1()'><b>loginasuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1@73700b80</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser1111()'><b>logoutasuser1111</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.modifypwduser2()'><b>modifypwduser2</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.loginwithmodifypwduser22()'><b>loginwithmodifypwduser22</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.logoutasuser333()'><b>logoutasuser333</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2.Deleteuser1()'><b>Deleteuser1</b><br>Test class: com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2@383bfa16</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>TestNG:  BasicscenarioDemo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BasicscenarioDemo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 14 14:30:55 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>251 seconds (251711 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2<br>Parameters: demo, user1, demouser1@gmail.com, Demouser1, Demouser1, Demouser1</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6<br>Parameters: Banking</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.Logout()'><b>Logout</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.launchbrowser()'><b>launchbrowser</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3<br>Parameters: Google</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.Modifyuser()'><b>Modifyuser</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2<br>Parameters: Sample</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.launchbroswer()'><b>launchbroswer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.launchbroswer()'><b>launchbroswer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.launchbroswer()'><b>launchbroswer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7<br>Parameters: Banking</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.deleteuser()'><b>deleteuser</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6<br>Parameters: Google</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5<br>Parameters: Google</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5<br>Parameters: Banking</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.modifyproject()'><b>modifyproject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6<br>Parameters: Health</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG3.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG3@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4<br>Parameters: Google</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.modifycustomer()'><b>modifycustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4<br>Parameters: HCL</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.launchbroswer()'><b>launchbroswer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.deleteuser()'><b>deleteuser</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1<br>Parameters: Demo, user1, Demouser1@gmail.com, Demouser1, Demouser1, Demouser1</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG5.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG5</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG5@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.deletetask()'><b>deletetask</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.login()'><b>login</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.minimizeflyout()'><b>minimizeflyout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7<br>Parameters: Google</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG1.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG1@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.launchbroswer()'><b>launchbroswer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG7.createtask()'><b>createtask</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG7<br>Parameters: Task1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG7@18d87d80</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.closeapplication()'><b>closeapplication</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG4.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG4@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BasicScenarioTestNG6.logout()'><b>logout</b><br>Test class: com.sgtesting.testngbasic.BasicScenarioTestNG6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.testngbasic.BasicScenarioTestNG6@1af2d44a</td></tr>
+<tr>
+<td title='com.sgtesting.testngbasic.BAsicScenarioTestNG2.launchbrowser()'><b>launchbrowser</b><br>Test class: com.sgtesting.testngbasic.BAsicScenarioTestNG2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngbasic.BAsicScenarioTestNG2@614ca7df</td></tr>
+</table><p>
+</body>
+</html>

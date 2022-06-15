@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ActiTImeTestNGAutomation1">
+	<test name="AdvancescenarioDemo">
+		<classes>
+			<class
+				name="com.sgtesting.advancescenariotestng.AdvanceScenarioTestng1"></class>
+			<class
+				name="com.sgtesting.advancescenariotestng.AdvanceScenarioTestng2"></class>
+		</classes>
+	</test>
+</suite>
